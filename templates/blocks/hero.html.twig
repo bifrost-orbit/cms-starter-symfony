@@ -1,0 +1,12 @@
+{% set f = block.fields %}
+<section class="hero" data-cms-id="{{ block.id }}">
+    {% if f.eyebrow is not empty %}
+        <p class="eyebrow">{{ f.eyebrow }}</p>
+    {% endif %}
+    <h1>{{ f.heading }}</h1>
+    {{ f.description|raw }}
+    <div class="actions">
+        {{ cms_block(f.primaryAction ?? null) }}
+        {{ cms_block(f.secondaryAction ?? null) }}
+    </div>
+</section>

@@ -1,0 +1,8 @@
+{% set f = block.fields %}
+<article data-cms-id="{{ block.id }}">
+    <h3>{{ f.title }}</h3>
+    <p>{{ f.body }}</p>
+    {% if f.link.href is defined and f.link.href is not empty %}
+        <a href="{{ f.link.href }}">Read more</a>
+    {% endif %}
+</article>

@@ -1,0 +1,6 @@
+framework:
+    cache:
+        pools:
+            cms.cache:
+                adapter: cache.adapter.filesystem
+                tags: true

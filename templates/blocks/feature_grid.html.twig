@@ -1,0 +1,10 @@
+{% set f = block.fields %}
+<section class="feature-grid" data-cms-id="{{ block.id }}">
+    <h2>{{ f.heading }}</h2>
+    {% if f.intro is not empty %}
+        <p>{{ f.intro }}</p>
+    {% endif %}
+    <div class="grid">
+        {{ cms_blocks(block.children.items ?? []) }}
+    </div>
+</section>

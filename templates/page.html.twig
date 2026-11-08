@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ page.locale }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ cms_head(page) }}
+</head>
+<body>
+    <main>
+        {{ cms_blocks(page.components) }}
+    </main>
+    {% if preview %}
+        {{ cms_bridge() }}
+    {% endif %}
+</body>
+</html>
