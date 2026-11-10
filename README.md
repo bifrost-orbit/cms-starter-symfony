@@ -2,6 +2,8 @@
 
 A Symfony website that reads its pages from [CMS Orbit](https://bifrostorbit.com/products/cms-orbit/), the headless CMS in Bifröst Orbit, with the PHP SDK `bifrost-orbit/cms-sdk`. It is the finished project from the [Symfony quickstart](https://docs.bifrostorbit.com/cms/developers/quickstart-symfony/): every published page at its own address, Twig templates for the blocks editors place, drafts in the live preview, and a signed webhook that clears only the cached pages that changed.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/bifrost-orbit/cms-starter-symfony?quickstart=1)
+
 ## Set up
 
 1. **Create your copy.** Select **Use this template** on GitHub, or run `gh repo create my-website --template bifrost-orbit/cms-starter-symfony --private --clone`. Then run `composer install`.
